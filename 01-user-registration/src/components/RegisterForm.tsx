@@ -37,7 +37,7 @@ const RegisterForm = () => {
           {errors.email && <p>{errors.email.message}</p>}
         </div>
         <div>
-          <label htmlFor="age">Eded</label>
+          <label htmlFor="age">Edad</label>
           <input
             type="number"
             id="age"
