@@ -8,7 +8,7 @@ const Register = () => {
       <h1>Formulario de registro</h1>
      <RegisterForm/>
       <p>
-        ¿Ya tienes una cuenta? <Link to="/profile">Iniciar sesión</Link>
+        ¿Ya tienes una cuenta? <Link to="/profile">Ver perfil</Link>
       </p>
     </div>
   );
