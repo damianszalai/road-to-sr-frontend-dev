@@ -18,10 +18,8 @@ const RegisterForm = () => {
   const { setUserData } = useUser();
 
   const onSubmit = (data: UserForm) => {
-    if (data) {
-      setUserData(data);
-      navigate('/profile');
-    }
+    setUserData(data);
+    navigate('/profile');
   };
 
   return (
