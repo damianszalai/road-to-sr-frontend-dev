@@ -12,6 +12,8 @@ const Profile = () => {
     }
   }, [userData, navigate]);
 
+  if (!userData) return null;
+
   return (
     <div>
       <h1>Perfil del usuario</h1>
