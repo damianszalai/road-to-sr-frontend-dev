@@ -11,6 +11,7 @@ Practicar e integrar:
 - Context API
 - React Hook Form
 - Validación con Zod
+- Localstorage
 - Buenas prácticas de organización
 
 ---
