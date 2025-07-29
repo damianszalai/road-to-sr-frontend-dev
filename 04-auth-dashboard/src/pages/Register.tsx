@@ -1,4 +1,4 @@
-// 04-auth-dashboard/src/pages/register.tsx
+// 04-auth-dashboard/src/pages/Register.tsx
 
 import LogOutButton from '@/components/LogOutButton';
 import RegisterForm from '@/components/RegisterForm';
