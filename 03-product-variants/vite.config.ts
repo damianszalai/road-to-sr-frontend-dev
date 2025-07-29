@@ -1,4 +1,4 @@
-// 02-product-listing/vite.config.ts
+// 03-product-variants/vite.config.ts
 import path from 'path';
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
