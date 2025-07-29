@@ -1,4 +1,4 @@
-// 02-product-listing/src/App.tsx
+// 03-product-variants/src/App.tsx
 
 import Products from './pages/Products';
 
