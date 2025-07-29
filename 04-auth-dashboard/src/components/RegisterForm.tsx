@@ -18,10 +18,16 @@ const RegisterForm = () => {
   const navigate = useNavigate();
   const { signUp, loading } = useAuth();
 
-  const onSubmit = (data: UserForm) => {
+  const onSubmit = async (data: UserForm) => {
     const { email, password } = data;
-    signUp(email, password);
-    navigate('/dashboard');
+    try {
+      await signUp(email, password);
+      navigate('/dashboard');
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        console.error('Signup failed:', err);
+      }
+    }
   };
 
   return (
@@ -31,7 +37,6 @@ const RegisterForm = () => {
       </h2>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-        {/* Email */}
         <div>
           <label
             htmlFor="email"
@@ -51,7 +56,6 @@ const RegisterForm = () => {
           )}
         </div>
 
-        {/* Password */}
         <div>
           <label
             htmlFor="password"
