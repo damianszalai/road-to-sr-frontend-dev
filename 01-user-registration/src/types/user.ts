@@ -1,3 +1,4 @@
+// 01-user-registration/src/types/user.ts
 export interface UserData {
   username: string;
   email: string;
