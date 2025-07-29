@@ -13,7 +13,7 @@ function Products() {
   const { data, isPending } = useProducts();
 
   return (
-    <main className="min-h-screen  p-6">
+    <main className="min-h-screen p-6">
       <header className="mb-8">
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-primary">
           🛍️ Product Listing
