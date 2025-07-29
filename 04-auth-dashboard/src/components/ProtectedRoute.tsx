@@ -1,5 +1,4 @@
 // 04-auth-dashboard/src/components/ProtectedRoute.tsx
-// 01-form-context/src/components/ProtectedRoute.tsx
 import { Navigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 import type { ReactNode } from 'react';
