@@ -1,4 +1,4 @@
-// 02-product-listing/src/lib/supabaseClient.ts
+// 03-product-variants/src/lib/supabaseClient.ts
 import { createClient } from '@supabase/supabase-js';
 
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
