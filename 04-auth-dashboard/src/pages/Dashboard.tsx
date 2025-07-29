@@ -1,4 +1,4 @@
-// 04-auth-dashboard/src/pages/dashboard.tsx
+// 04-auth-dashboard/src/pages/Dashboard.tsx
 
 import LogOutButton from '@/components/LogOutButton';
 
