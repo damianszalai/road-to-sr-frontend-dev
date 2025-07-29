@@ -1,7 +1,7 @@
 // 02-product-listing/src/types/product.ts
 export interface ProductType {
   name: string;
-  id: number;
+  id: string;
   description: string;
   price: number;
   stock: number;
