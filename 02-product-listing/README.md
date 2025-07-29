@@ -4,22 +4,52 @@ This is the second exercise in the **Road to Senior Frontend Developer** project
 
 ## ✅ Objective
 
-Build a page that lists products from a Supabase database, using React Query to handle async fetching, and display them with a clean UI using shadcn/ui components.
+Build a fully functional product listing page by integrating **Supabase** for data, **React Query** for fetching and caching, and **shadcn/ui** for modern UI components.
+
+---
 
 ## 🧩 Features
 
-- 📦 Fetch product list from Supabase
-- 🔄 Loading and error states with React Query
-- 🎨 Display products in cards using `shadcn/ui`
-- ✅ Strong typing with TypeScript
+- 📦 Fetch products from Supabase
+- 🚀 Display loading state with Skeletons
+- 💅 Responsive product cards using shadcn/ui
+- ✅ Type-safe code with TypeScript
+- 🔄 React Query for cache and async control
+
+---
 
 ## 🛠️ Tech Stack
 
-- React + TypeScript
+- Vite + React + TypeScript
 - Supabase
 - React Query
 - shadcn/ui
-- Vite
+- Tailwind CSS
+
+---
+
+## 📁 Folder Structure
+
+/02-product-listing
+├── src/
+│ ├── components/
+│ │ ├── ui/
+│ │ │ ├── card.tsx
+│ │ │ └── skeleton.tsx
+│ ├── hooks/
+│ │ └── useProducts.tsx
+│ ├── lib/
+│ │ └── supabaseClient.ts
+│ ├── pages/
+│ │ └── Products.tsx
+│ ├── services/
+│ │ └── getProducts.service.ts
+│ ├── types/
+│ │ └── product.ts
+│ ├── App.tsx
+│ └── main.tsx
+
+---
 
 ## 🧱 Supabase Table Schema
 
@@ -27,45 +57,33 @@ Table: `products`
 
 | Column      | Type      | Required           |
 | ----------- | --------- | ------------------ |
-| id          | UUID      | ✅ PK              |
+| id          | UUID      | ✅ Primary Key     |
 | name        | text      | ✅                 |
 | description | text      | ✅                 |
 | price       | numeric   | ✅                 |
 | stock       | integer   | ✅                 |
 | created_at  | timestamp | ✅ default = now() |
 
-## 📁 Folder Structure
+---
 
-/02-product-listing
-/components
-ProductCard.tsx # UI for each product
-/pages
-Products.tsx # List page
-/lib
-supabase.ts # Supabase client instance
-queries.ts # React Query logic
+## 🌐 How to Run
 
-markdown
-Copy
-Edit
+1. Add your Supabase keys in a `.env` file:
 
-## 🚀 How to Run
-
-1. Set up a `.env` with Supabase keys:
-   VITE_SUPABASE_URL=your_url
-   VITE_SUPABASE_ANON_KEY=your_anon_key
-
-go
-Copy
-Edit
+```env
+VITE_SUPABASE_URL=https://your-project.supabase.co
+VITE_SUPABASE_ANON_KEY=your-anon-key
+```
 
 2. Install dependencies:
 
-```bash
+```
 npm install
-Run the project:
+```
 
+3. Start dev server:
+
+```
 npm run dev
-Go to http://localhost:5173/products
-
+Visit http://localhost:5173
 ```

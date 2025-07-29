@@ -1,12 +1,9 @@
 // 02-product-listing/src/App.tsx
-import './App.css';
+
+import Products from './pages/Products';
 
 function App() {
-  return (
-    <div>
-      <h1 className="text-red-200">Hola mundo!</h1>
-    </div>
-  );
+  return <Products />;
 }
 
 export default App;
