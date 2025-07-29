@@ -6,7 +6,7 @@ import type { ReactNode } from 'react';
 const ProtectedRoute = ({ children }: { children: ReactNode }) => {
   const { user } = useAuth();
 
-  return user ? children : <Navigate to="/register" />;
+  return user ? children : <Navigate to="/login" />;
 };
 
 export default ProtectedRoute;
