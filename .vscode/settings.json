@@ -1,0 +1,16 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.tabWidth": 2,
+  "prettier.bracketSpacing": true,
+  "prettier.printWidth": 80,
+  "beautify.language": {
+    "javascript": ["javascript", "json"],
+    "html": ["html"],
+    "css": ["scss"]
+  }
+}
