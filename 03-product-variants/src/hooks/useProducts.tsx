@@ -1,4 +1,4 @@
-// 02-product-listing/src/hooks/useProducts.tsx
+// 03-product-variants/src/hooks/useProducts.tsx
 import { getProducts } from '@/services/getProducts.service';
 import { useQuery } from '@tanstack/react-query';
 
