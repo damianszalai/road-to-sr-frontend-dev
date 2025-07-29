@@ -36,7 +36,7 @@ function Products() {
         </div>
       ) : (
         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {data?.map((product) => (
+          {(data ?? []).map((product) => (
             <Card
               key={product.id}
               className="hover:shadow-xl transition-shadow duration-300"
