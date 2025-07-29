@@ -1,4 +1,4 @@
-// 02-product-listing/src/main.tsx
+// 03-product-variants/src/main.tsx
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
