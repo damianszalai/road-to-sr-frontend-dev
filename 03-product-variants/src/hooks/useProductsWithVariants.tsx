@@ -5,7 +5,7 @@ import { useQuery } from '@tanstack/react-query';
 
 export const useProductsWithVariants = () => {
   const { data, isPending, error } = useQuery({
-    queryKey: ['products'],
+    queryKey: ['products-variants'],
     queryFn: () => getProductsWithVariants(),
   });
 
