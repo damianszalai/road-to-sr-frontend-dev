@@ -80,7 +80,7 @@ function OrdersPage() {
             <DropdownMenuContent>
               {STATUS_VALUES.map((status) => {
                 if (status === order.status) {
-                  return;
+                  return null;
                 }
                 return (
                   <DropdownMenuItem
