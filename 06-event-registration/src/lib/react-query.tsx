@@ -1,4 +1,4 @@
-// 05-orders-admin-next/src/lib/react-query.tsx
+// 06-event-registration/src/lib/react-query.tsx
 'use client';
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
