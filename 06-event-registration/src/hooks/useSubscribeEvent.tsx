@@ -15,7 +15,8 @@ export const useSubscribeEvent = () => {
     mutationFn: ({ eventId, userId, numberOfSpots }: UpdateEventParams) =>
       subscribeEvent(eventId, userId, numberOfSpots),
     onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ['events', 'registrations'] });
+      queryClient.invalidateQueries({ queryKey: ['events'] });
+      queryClient.invalidateQueries({ queryKey: ['registrations'] });
       return true;
     },
   });

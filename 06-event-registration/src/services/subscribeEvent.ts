@@ -5,7 +5,7 @@ export const subscribeEvent = async (
   event_id: string,
   user_id: string,
   numberOfSpots: number,
-): Promise<string | []> => {
+): Promise<string> => {
   const { error: eventError } = await supabase
     .from('events')
     .update({ spots: numberOfSpots })

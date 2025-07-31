@@ -36,8 +36,6 @@ const Page = () => {
       userId,
       numberOfSpots,
     });
-
-    userEvents?.push(eventId);
   };
 
   return (

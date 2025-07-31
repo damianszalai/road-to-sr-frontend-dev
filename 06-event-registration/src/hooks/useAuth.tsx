@@ -1,4 +1,4 @@
-// 04-auth-dashboard/src/hooks/useAuth.tsx
+// 06-event-registration/src/hooks/useAuth.tsx
 
 import { AuthContext } from '@/context/AuthContext';
 import { useContext } from 'react';

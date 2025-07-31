@@ -1,4 +1,4 @@
-// 05-orders-admin-next/src/app/utils/supabase/server.ts
+// 06-event-registration/src/app/utils/supabase/server.ts
 import { createServerClient } from '@supabase/ssr';
 import { cookies } from 'next/headers';
 
