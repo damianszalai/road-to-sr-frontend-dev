@@ -1,4 +1,4 @@
-// 05-orders-admin-next/src/lib/supabaseClient.ts
+// 06-event-registration/src/lib/supabaseClient.ts
 import { createBrowserClient } from '@supabase/ssr';
 
 export const supabase = createBrowserClient(
