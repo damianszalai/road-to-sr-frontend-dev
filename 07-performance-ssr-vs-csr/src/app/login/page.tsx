@@ -29,7 +29,6 @@ export default function Login() {
     }
   };
 
-  const form = useForm();
 
   return (
     <Card className="max-w-md mx-auto mt-2">
